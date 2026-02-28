@@ -746,20 +746,22 @@
             font-size: 0.8rem;
         }
         
-        /* CO2 Technology Section */
-        .tech-section {
+        /* CO2 Technology Section (renamed from tech-section for clarity) */
+        .co2-tech-section {
             position: relative;
             overflow: hidden;
+            background-color: var(--white);
+            scroll-margin-top: 80px; /* offset for fixed header */
         }
         
-        .tech-content {
+        .co2-tech-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
         
-        .tech-badge {
+        .co2-tech-badge {
             display: inline-block;
             background-color: rgba(46, 169, 164, 0.1);
             color: var(--accent-teal);
@@ -771,7 +773,7 @@
             border: 1px solid rgba(46, 169, 164, 0.3);
         }
         
-        .tech-image {
+        .co2-tech-image {
             border-radius: 8px;
             overflow: hidden;
             box-shadow: var(--shadow-hover);
@@ -779,16 +781,16 @@
             background: url('https://images.unsplash.com/photo-1612817288484-6f91600674a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') no-repeat center center/cover;
         }
         
-        .tech-features {
+        .co2-tech-features {
             margin-top: 2rem;
         }
         
-        .tech-feature-item {
+        .co2-tech-feature-item {
             display: flex;
             margin-bottom: 1.5rem;
         }
         
-        .tech-feature-icon {
+        .co2-tech-feature-icon {
             flex-shrink: 0;
             width: 50px;
             height: 50px;
@@ -921,48 +923,6 @@
             font-size: 1.2rem;
         }
         
-        /* Contact Form */
-        .contact-form {
-            background-color: var(--white);
-            border-radius: 8px;
-            padding: 3rem;
-            box-shadow: var(--shadow);
-            margin-top: 2rem;
-        }
-        
-        .form-group {
-            margin-bottom: 1.8rem;
-        }
-        
-        .form-label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            color: var(--dark-gray);
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid #E5E7EB;
-            border-radius: 4px;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--accent-teal);
-            box-shadow: 0 0 0 3px rgba(46, 169, 164, 0.1);
-        }
-        
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-        }
-        
         /* Footer */
         .main-footer {
             background-color: var(--primary-dark);
@@ -1041,12 +1001,12 @@
                 font-size: 2.8rem;
             }
             
-            .tech-content, .about-content, .financing-content {
+            .co2-tech-content, .about-content, .financing-content {
                 grid-template-columns: 1fr;
                 gap: 3rem;
             }
             
-            .tech-image, .about-image {
+            .co2-tech-image, .about-image {
                 height: 300px;
                 order: -1;
             }
@@ -1111,14 +1071,6 @@
             
             .cta-section, .financing-section {
                 padding: 3rem 1.5rem;
-            }
-            
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-form {
-                padding: 2rem;
             }
             
             .types-tabs {
@@ -1220,11 +1172,11 @@
             <nav>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#types" class="nav-link">Heat Pump Types</a></li>
                     <li><a href="#why-choose" class="nav-link">Why Choose Us</a></li>
-                    <li><a href="#technology" class="nav-link">CO2 Technology</a></li>
+                    <li><a href="#co2-technology" class="nav-link">CO2 Technology</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -1255,18 +1207,7 @@
                     <span class="stat-number">24/7</span>
                     <span class="stat-label">Emergency Service</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">1000+</span>
-                    <span class="stat-label">Systems Installed</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">Certified</span>
-                    <span class="stat-label">Technicians</span>
-                </div>
+
             </div>
         </div>
     </section>
@@ -1277,7 +1218,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>Your Trusted HVAC Experts Since 20xx</h2>
-                    <p>Precision Climate Solutions was founded with a simple mission: to provide superior heating and cooling solutions with unparalleled technical expertise and customer service. As a family-owned business based in Oshkosh, we understand the unique climate challenges of Wisconsin and the Fox Valley region.</p>
+                    <p>Precision Climate Solutions was founded with a simple mission: to provide superior heating and cooling solutions with unparalleled technical expertise and customer service. As a family-owned business based in Hamilton, we understand the unique climate challenges of Southern Ontario and the greater Hamilton area.</p>
                     <p>What sets us apart is our commitment to staying at the forefront of HVAC technology. While we excel in traditional heat pump installations and repairs, we've developed specialized expertise in advanced systems like CO₂ (R744) refrigerant technology, geothermal systems, and high-efficiency cold climate heat pumps.</p>
                     
                     <div class="company-values">
@@ -1368,7 +1309,7 @@
                             <li><i class="fas fa-check-circle"></i> Cold climate optimization</li>
                         </ul>
                         
-                        <a href="#technology" class="btn btn-outline" style="margin-top: 1rem;">Learn More</a>
+                        <a href="#co2-technology" class="btn btn-outline" style="margin-top: 1rem;">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -1787,18 +1728,18 @@
         </div>
     </section>
 
-    <!-- CO2 Technology Section -->
-    <section class="tech-section section-padding" id="technology">
+    <!-- CO2 Technology Section (now with id="co2-technology") -->
+    <section class="co2-tech-section section-padding" id="co2-technology">
         <div class="container">
-            <div class="tech-content">
+            <div class="co2-tech-content">
                 <div class="tech-text">
-                    <span class="tech-badge">Innovation Focus</span>
+                    <span class="co2-tech-badge">Innovation Focus</span>
                     <h2>CO₂ Heat Pump Technology</h2>
                     <p>We specialize in advanced heat pump systems utilizing natural CO₂ (R744) refrigerant, offering superior efficiency, environmental sustainability, and exceptional performance even in extreme cold climates.</p>
                     
-                    <div class="tech-features">
-                        <div class="tech-feature-item">
-                            <div class="tech-feature-icon">
+                    <div class="co2-tech-features">
+                        <div class="co2-tech-feature-item">
+                            <div class="co2-tech-feature-icon">
                                 <i class="fas fa-globe-americas"></i>
                             </div>
                             <div>
@@ -1807,8 +1748,8 @@
                             </div>
                         </div>
                         
-                        <div class="tech-feature-item">
-                            <div class="tech-feature-icon">
+                        <div class="co2-tech-feature-item">
+                            <div class="co2-tech-feature-icon">
                                 <i class="fas fa-thermometer-three-quarters"></i>
                             </div>
                             <div>
@@ -1817,8 +1758,8 @@
                             </div>
                         </div>
                         
-                        <div class="tech-feature-item">
-                            <div class="tech-feature-icon">
+                        <div class="co2-tech-feature-item">
+                            <div class="co2-tech-feature-icon">
                                 <i class="fas fa-bolt"></i>
                             </div>
                             <div>
@@ -1831,7 +1772,7 @@
                     <a href="#contact" class="btn btn-primary" style="margin-top: 1.5rem;">Inquire About CO2 Systems</a>
                 </div>
                 
-                <div class="tech-image"></div>
+                <div class="co2-tech-image"></div>
             </div>
         </div>
     </section>
@@ -1931,8 +1872,8 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- CTA Section (renamed contact anchor) -->
+    <section class="cta-section" id="contact">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready for Superior Climate Control?</h2>
@@ -1946,59 +1887,6 @@
                         <i class="fas fa-envelope"></i> Send Message
                     </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section-padding" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact Our Team</h2>
-                <p class="section-subtitle">Get in touch for estimates, service requests, or questions about our heat pump solutions</p>
-            </div>
-            
-            <div class="contact-form">
-                <form id="serviceForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="(555) 123-4567" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="service" class="form-label">Service Needed</label>
-                        <select id="service" class="form-control" required>
-                            <option value="" disabled selected>Select a service</option>
-                            <option value="installation">New Heat Pump Installation</option>
-                            <option value="repair">Heat Pump Repair</option>
-                            <option value="maintenance">Preventive Maintenance</option>
-                            <option value="consultation">Free Consultation - Which Type?</option>
-                            <option value="co2">CO₂ System Inquiry</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-control" rows="5" placeholder="Please describe your needs, including any specific system requirements or issues..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem; font-size: 1.1rem;">
-                        <i class="fas fa-paper-plane"></i> Submit Request
-                    </button>
-                </form>
             </div>
         </div>
     </section>
@@ -2026,7 +1914,7 @@
                         <li><a href="#services">HVAC Repair</a></li>
                         <li><a href="#services">Preventive Maintenance</a></li>
                         <li><a href="#types">Geothermal Systems</a></li>
-                        <li><a href="#technology">CO₂ Heat Pumps</a></li>
+                        <li><a href="#co2-technology">CO₂ Heat Pumps</a></li>
                         <li><a href="#services">Commercial HVAC</a></li>
                     </ul>
                 </div>
@@ -2084,40 +1972,26 @@
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
-                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
-                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
             });
         });
         
         // Update copyright year
         document.getElementById('currentYear').textContent = new Date().getFullYear();
         
-        // Form submission
-        document.getElementById('serviceForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const service = document.getElementById('service').value;
-            
-            // In a real application, you would send this data to a server
-            // For demo purposes, we'll show an alert
-            alert(`Thank you, ${name}! Your ${service} request has been submitted. Our team will contact you within 24 hours.`);
-            
-            // Reset form
-            this.reset();
-        });
-        
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
                 
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
+                    e.preventDefault();
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
@@ -2174,7 +2048,8 @@
                 document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
                     if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
                         otherAnswer.classList.remove('active');
-                        otherAnswer.previousElementSibling.querySelector('.faq-toggle').classList.remove('active');
+                        const otherToggle = otherAnswer.previousElementSibling.querySelector('.faq-toggle');
+                        if (otherToggle) otherToggle.classList.remove('active');
                     }
                 });
                 
@@ -2182,40 +2057,6 @@
                 answer.classList.toggle('active');
                 toggle.classList.toggle('active');
             });
-        });
-        
-        // Form submission with more details
-        document.getElementById('serviceForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const service = document.getElementById('service').value;
-            const phone = document.getElementById('phone').value;
-            
-            // Simple phone validation
-            const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
-            
-            if (!phoneRegex.test(phone)) {
-                alert('Please enter a valid phone number');
-                return;
-            }
-            
-            // In a real application, you would send this data to a server
-            // For demo purposes, we'll show an alert
-            const serviceNames = {
-                'installation': 'New Heat Pump Installation',
-                'repair': 'Heat Pump Repair',
-                'maintenance': 'Preventive Maintenance',
-                'consultation': 'Free Consultation',
-                'co2': 'CO₂ System Inquiry',
-                'other': 'Other Service'
-            };
-            
-            alert(`Thank you, ${name}!\n\nYour ${serviceNames[service]} request has been submitted.\n\nWe'll call you at ${phone} within 30 minutes during business hours.\n\nFor emergencies, call (555) 123-EMER anytime.`);
-            
-            // Reset form
-            this.reset();
         });
         
         // Add scroll animation for elements
